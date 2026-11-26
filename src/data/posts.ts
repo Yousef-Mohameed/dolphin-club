@@ -1,0 +1,77 @@
+export type Post = {
+  slug: string
+  title: { en: string; ar: string }
+  excerpt: { en: string; ar: string }
+  date: string
+  tag: { en: string; ar: string }
+  body: { en: string[]; ar: string[] }
+}
+
+export const posts: Post[] = [
+  {
+    slug: 'freestyle-breathing-basics',
+    title: { en: 'Freestyle breathing: the 3 mistakes every beginner makes', ar: 'التنفس في السباحة الحرة: 3 أخطاء بيعملها كل مبتدئ' },
+    excerpt: {
+      en: 'Fix your breathing and your freestyle changes completely. Here are the 3 most common mistakes and how to fix them.',
+      ar: 'ظبط تنفسك والسباحة الحرة هتتغير معاك تماماً. دي أكتر 3 أخطاء شائعة وإزاي تصلحها.',
+    },
+    date: '2026-11-10',
+    tag: { en: 'Technique', ar: 'تكنيك' },
+    body: {
+      en: [
+        'Most beginners lift their head to breathe. This drops the hips and makes every stroke harder. Instead, rotate your head with your body: one goggle stays in the water.',
+        'The second mistake is holding your breath underwater. Exhale slowly through your nose the whole time your face is in the water, so the inhale is quick and relaxed.',
+        'Finally, breathing too often breaks your rhythm. Try bilateral breathing every 3 strokes. It keeps your stroke balanced and your oxygen steady.',
+      ],
+      ar: [
+        'أغلب المبتدئين بيرفعوا رأسهم عشان يتنفسوا. ده بينزل الورك وبيخلي كل ضربة أصعب. بدل كده، لف رأسك مع جسمك: نظارة واحدة تفضل في المياه.',
+        'الغلطة التانية هي حبس النفس تحت المياه. اخرج النفس ببطء من مناخيرك طول ما وشك في المياه، عشان الشهيق يبقى سريع ومريح.',
+        'وأخيراً، التنفس كتير بيكسر الإيقاع. جرب التنفس على الجانبين كل 3 ضربات. ده بيحافظ على توازن الضربة وثبات الأكسجين.',
+      ],
+    },
+  },
+  {
+    slug: 'nutrition-for-young-swimmers',
+    title: { en: 'What should a young swimmer eat before training?', ar: 'إيه اللي لازم السباح الصغير ياكله قبل التدريب؟' },
+    excerpt: {
+      en: 'Simple nutrition rules that give kids energy in the pool without stomach trouble.',
+      ar: 'قواعد تغذية بسيطة بتدي الأطفال طاقة في المسبح من غير مشاكل في المعدة.',
+    },
+    date: '2026-10-28',
+    tag: { en: 'Nutrition', ar: 'تغذية' },
+    body: {
+      en: [
+        'A light meal 90 minutes before training works best: complex carbs like oats, bread or rice with a little protein.',
+        'Avoid fried and very fatty food before swimming; it digests slowly and causes cramps and heaviness.',
+        'Hydration matters even in water. Kids sweat in the pool too, so a water bottle on the pool edge is a must.',
+      ],
+      ar: [
+        'وجبة خفيفة قبل التدريب بـ 90 دقيقة هي الأفضل: كربوهيدرات معقدة زي الشوفان أو العيش أو الأرز مع شوية بروتين.',
+        'ابعد عن الأكل المقلي والدهني قبل السباحة؛ هضمه بطيء وبيسبب مغص وثقل.',
+        'الترطيب مهم حتى وانت في المياه. الأطفال بيعرقوا في المسبح برضه، فزجاجة مياه على حرف المسبح ضرورية.',
+      ],
+    },
+  },
+  {
+    slug: 'preventing-swimmers-shoulder',
+    title: { en: "Swimmer's shoulder: how to prevent it", ar: 'كتف السباح: إزاي تمنعه' },
+    excerpt: {
+      en: 'Shoulder pain is the most common swimming injury. Prevention is easier than treatment.',
+      ar: 'ألم الكتف هو أكتر إصابة شائعة في السباحة. والوقاية أسهل بكتير من العلاج.',
+    },
+    date: '2026-10-05',
+    tag: { en: 'Injury prevention', ar: 'الوقاية من الإصابات' },
+    body: {
+      en: [
+        'Most shoulder problems come from poor technique: a thumb-first entry and crossing the center line put the joint in a weak position.',
+        'Warm up the rotator cuff before every session: 5 minutes of band rotations save months of rehab.',
+        'Increase distance gradually, no more than 10% per week, and never swim through sharp pain.',
+      ],
+      ar: [
+        'أغلب مشاكل الكتف سببها التكنيك الغلط: دخول الإبهام الأول في المياه وتخطي خط المنتصف بيحط المفصل في وضع ضعيف.',
+        'سخن الكفة المدورة قبل كل حصة: 5 دقايق تمرينات بالاستك بتوفر شهور علاج.',
+        'زود المسافات بالتدريج، مش أكتر من 10% في الأسبوع، ومتكملش سباحة أبداً وأنت حاسس بألم حاد.',
+      ],
+    },
+  },
+]

@@ -1,0 +1,298 @@
+{
+  "brand": "Aqua Wave",
+  "nav": {
+    "home": "Home",
+    "programs": "Programs",
+    "coaches": "Coaches",
+    "schedule": "Schedule",
+    "membership": "Membership",
+    "honors": "Honors",
+    "gallery": "Gallery",
+    "events": "Events",
+    "blog": "Blog",
+    "about": "About",
+    "contact": "Contact",
+    "join": "Join now",
+    "menu": "Open menu",
+    "close": "Close menu"
+  },
+  "theme": {
+    "light": "Switch to light mode",
+    "dark": "Switch to dark mode"
+  },
+  "sound": {
+    "on": "Play water sounds",
+    "off": "Mute water sounds"
+  },
+  "hero": {
+    "badge": "Professional Swimming Club",
+    "title1": "Dive Into the",
+    "title2": "World of Champions",
+    "subtitle": "Professional coaching for all ages, in Olympic pools. Book your free trial session today.",
+    "ctaTrial": "Book a Free Trial",
+    "ctaPrograms": "View Programs"
+  },
+  "wa": {
+    "prefill": "Hello Aqua Wave! I would like to ask about your swimming programs.",
+    "aria": "Chat with us on WhatsApp"
+  },
+  "trial": {
+    "title": "Book a Free Trial",
+    "name": "Name",
+    "namePh": "Your full name",
+    "phone": "Phone (WhatsApp)",
+    "age": "Age",
+    "program": "Program",
+    "programPh": "Choose a program",
+    "submit": "Book now",
+    "hint": "Takes under 30 seconds. We confirm on WhatsApp.",
+    "successTitle": "You are almost in!",
+    "successText": "One tap left: send your booking on WhatsApp and we will confirm your session.",
+    "confirmWa": "Confirm on WhatsApp",
+    "waMessage": "Hello Aqua Wave! I want to book a free trial. Name: {{name}}, Phone: {{phone}}, Age: {{age}}, Program: {{program}}",
+    "err": {
+      "name": "Please enter your name",
+      "phone": "Enter a valid phone number",
+      "age": "Age must be between 3 and 90",
+      "program": "Please choose a program"
+    }
+  },
+  "stats": {
+    "swimmers": "Member swimmers",
+    "champions": "Championship medalists",
+    "coaches": "Certified coaches",
+    "years": "Years of experience"
+  },
+  "programs": {
+    "title": "Programs",
+    "cta": "Book this program",
+    "kids": {
+      "name": "Kids Learn-to-Swim",
+      "desc": "From 4 to 10 years. Safety, confidence and fun in the water."
+    },
+    "competitive": {
+      "name": "Competitive Team",
+      "desc": "Intensive training for meets and championships."
+    },
+    "adults": {
+      "name": "Adults Fitness",
+      "desc": "Swimming for fitness, technique and weight loss."
+    }
+  },
+  "quiz": {
+    "title": "What kind of swimmer are you?",
+    "subtitle": "3 quick questions and we point you to the right program.",
+    "progress": "Question {{n}} of {{total}}",
+    "q": {
+      "goal": "What is your main goal?",
+      "age": "How old is the swimmer?",
+      "level": "What is the current level?"
+    },
+    "a": {
+      "learn": "Learn to swim from zero",
+      "compete": "Compete and win medals",
+      "fitness": "Fitness and health",
+      "child": "4 - 10 years",
+      "teen": "11 - 17 years",
+      "adult": "18+ years",
+      "beginner": "Beginner (new to the pool)",
+      "intermediate": "Intermediate (can swim basics)",
+      "advanced": "Advanced (training regularly)"
+    },
+    "resultLead": "Your perfect program is",
+    "bookNow": "Book a free trial",
+    "retake": "Retake quiz"
+  },
+  "records": {
+    "title": "Speed & Records",
+    "subtitle": "Our numbers speak in seconds.",
+    "stopwatch": "50m freestyle - club record",
+    "sec": "s",
+    "clubLabel": "Set by our competitive team, Nationals 2026",
+    "clubName": "Aqua Wave record",
+    "nationalName": "National average",
+    "beginnerName": "Average beginner",
+    "note": "Shorter bar = faster time. Our coaches chase every tenth of a second."
+  },
+  "scheduleWidget": {
+    "title": "Live Schedule",
+    "next": "Next session: {{time}} - {{program}}",
+    "spots": "In ~{{hours}}h - {{count}} spots left",
+    "full": "Full",
+    "loading": "Loading schedule...",
+    "fullSchedule": "Full schedule"
+  },
+  "schedulePage": {
+    "title": "Weekly Schedule",
+    "day": "Day",
+    "time": "Time",
+    "program": "Program",
+    "spots": "Spots left",
+    "note": "Schedule updates from a simple file - message us on WhatsApp to reserve your spot."
+  },
+  "champions": {
+    "title": "Our Champions",
+    "ofMonth": "Swimmer of the Month"
+  },
+  "honors": {
+    "title": "Honor Board",
+    "subtitle": "Every medal has a name. Filter by year.",
+    "all": "All years"
+  },
+  "coaches": {
+    "title": "Meet the Coaches",
+    "subtitle": "Certified, experienced, and in the water with you.",
+    "more": "View profile",
+    "back": "All coaches",
+    "book": "Book with this coach",
+    "specialties": "Specialties",
+    "achievements": "Achievements",
+    "waBook": "Hello Aqua Wave! I would like to book a session with {{name}}."
+  },
+  "gallery": {
+    "title": "From the Pool",
+    "subtitle": "Short clips from training and events. Tap to watch with sound."
+  },
+  "testimonials": {
+    "title": "Members' Stories",
+    "subtitle": "Real swimmers, real progress - in their own words."
+  },
+  "calc": {
+    "title": "Plan Calculator",
+    "subtitle": "Age, level and goal in - a weekly plan and price out.",
+    "age": "Age",
+    "level": "Level",
+    "levels": {
+      "beginner": "Beginner",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced"
+    },
+    "goal": "Goal",
+    "goals": {
+      "learn": "Learn to swim",
+      "fitness": "Fitness",
+      "competition": "Competition"
+    },
+    "sessions": "{{count}} sessions per week",
+    "focus": {
+      "kids": "Focus: water safety, floating, basic strokes",
+      "competitive": "Focus: speed, endurance, starts and turns",
+      "adults": "Focus: technique, stamina, steady weight loss"
+    },
+    "price": "Approximate price: EGP {{price}} / month",
+    "cta": "Start with a free trial"
+  },
+  "challenge": {
+    "title": "Monthly Challenge: 10 km",
+    "subtitle": "Swim 10 kilometers this month, collect points and badges. Saved on your device.",
+    "join": "Join the challenge",
+    "km": "km",
+    "points": "points",
+    "logPh": "Meters today",
+    "logBtn": "Log",
+    "badge25": "2.5 km",
+    "badge50": "5 km",
+    "badge75": "7.5 km",
+    "badge100": "10 km finisher",
+    "done": "Challenge complete! Show this at the front desk."
+  },
+  "countdown": {
+    "days": "days",
+    "hours": "hrs",
+    "mins": "min",
+    "secs": "sec"
+  },
+  "events": {
+    "title": "Events & Championships",
+    "subtitle": "Next races and club days. Register your spot.",
+    "counts": "Starts in",
+    "regTitle": "Register for an event",
+    "name": "Full name",
+    "phone": "Phone (WhatsApp)",
+    "pick": "Choose event",
+    "register": "Register via WhatsApp",
+    "waMessage": "Hello Aqua Wave! I want to register for {{event}}. Name: {{name}}, Phone: {{phone}}"
+  },
+  "blog": {
+    "title": "The Swim Blog",
+    "subtitle": "Technique, nutrition and injury prevention.",
+    "back": "All articles",
+    "ctaText": "Ready to try it in the water?"
+  },
+  "about": {
+    "title": "About Aqua Wave",
+    "body": "Aqua Wave started in 2018 with one lane and a dream: make championship-level coaching available to every kid in the city. Today we are 12 certified coaches, 35 medalists and more than 1,200 members - and we still treat every new swimmer like our first."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "wa": "Message us on WhatsApp"
+  },
+  "membership": {
+    "title": "Membership",
+    "subtitle": "Simple prices, no hidden fees. Every plan starts with a free trial.",
+    "popular": "Most popular",
+    "egp": "EGP",
+    "cta": "Subscribe",
+    "note": "Prices are placeholders - final pricing is confirmed on WhatsApp.",
+    "monthly": {
+      "name": "Monthly",
+      "features": [
+        "2 sessions per week",
+        "1 month access",
+        "Free trial session"
+      ]
+    },
+    "quarterly": {
+      "name": "3 Months",
+      "features": [
+        "3 sessions per week",
+        "3 months access",
+        "Free trial session",
+        "Progress report"
+      ]
+    },
+    "yearly": {
+      "name": "Yearly",
+      "features": [
+        "Unlimited sessions",
+        "Full year access",
+        "Competition entry covered",
+        "Personal coach follow-up"
+      ]
+    }
+  },
+  "seo": {
+    "homeTitle": "Aqua Wave Swimming Club | Book a Free Trial",
+    "homeDesc": "Professional swimming coaching for kids and adults. Programs, champions, schedule and free trial booking.",
+    "programsTitle": "Programs | Aqua Wave",
+    "programsDesc": "Kids learn-to-swim, competitive team and adults fitness programs.",
+    "coachesTitle": "Coaches | Aqua Wave",
+    "coachesDesc": "Meet our certified swimming coaches and book with your favorite.",
+    "scheduleTitle": "Schedule | Aqua Wave",
+    "scheduleDesc": "Live weekly schedule and available spots.",
+    "membershipTitle": "Membership | Aqua Wave",
+    "membershipDesc": "Monthly, quarterly and yearly membership plans.",
+    "honorsTitle": "Honor Board | Aqua Wave",
+    "honorsDesc": "Our medalists and champions by year.",
+    "galleryTitle": "Gallery | Aqua Wave",
+    "galleryDesc": "Short videos from training, events and member stories.",
+    "eventsTitle": "Events | Aqua Wave",
+    "eventsDesc": "Upcoming championships and club events with registration.",
+    "blogTitle": "Blog | Aqua Wave",
+    "blogDesc": "Swimming technique, nutrition and injury-prevention articles.",
+    "aboutTitle": "About | Aqua Wave",
+    "aboutDesc": "The story of Aqua Wave swimming club.",
+    "contactTitle": "Contact | Aqua Wave",
+    "contactDesc": "Reach Aqua Wave on WhatsApp, phone or visit us."
+  },
+  "notFound": {
+    "text": "This page does not exist.",
+    "back": "Back to home"
+  },
+  "footer": {
+    "tagline": "Swimming club for kids and adults. Dive in.",
+    "linksTitle": "Quick links",
+    "contactTitle": "Contact",
+    "rights": "All rights reserved."
+  }
+}
