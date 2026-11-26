@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { Play } from 'lucide-react'
+import { LuPlay as Play } from 'react-icons/lu'
 import { Reveal } from '../lib/reveal'
 import Lightbox from './Lightbox'
 

@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router'
 import { useTranslation } from 'react-i18next'
-import { CalendarClock } from 'lucide-react'
+import { LuCalendarClock as CalendarClock } from 'react-icons/lu'
 import { Reveal } from '../lib/reveal'
 
 type Session = { day: number; time: string; program: string; spotsLeft: number }

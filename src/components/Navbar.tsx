@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router'
 import { useTranslation } from 'react-i18next'
-import { Menu, X } from 'lucide-react'
+import { LuMenu as Menu, LuX as X } from 'react-icons/lu'
 import DolphinIcon from './DolphinIcon'
 import LanguageToggle from './LanguageToggle'
 import ThemeToggle from './ThemeToggle'

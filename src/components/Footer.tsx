@@ -1,6 +1,6 @@
 import { Link } from 'react-router'
 import { useTranslation } from 'react-i18next'
-import { Phone, MapPin, Clock } from 'lucide-react'
+import { LuPhone as Phone, LuMapPin as MapPin, LuClock as Clock } from 'react-icons/lu'
 import DolphinIcon from './DolphinIcon'
 import { CLUB } from '../config'
 

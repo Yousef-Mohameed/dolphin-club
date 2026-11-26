@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { CalendarDays, MapPin, MessageCircle } from 'lucide-react'
+import { LuCalendarDays as CalendarDays, LuMapPin as MapPin } from 'react-icons/lu'
+import { FaWhatsapp as MessageCircle } from 'react-icons/fa'
 import { events } from '../data/events'
 import EventCountdown from '../components/EventCountdown'
 import { Reveal } from '../lib/reveal'

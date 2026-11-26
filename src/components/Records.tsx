@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import { Timer } from 'lucide-react'
+import { LuTimer as Timer } from 'react-icons/lu'
 import { CountUp } from '../lib/countup'
 import { Reveal } from '../lib/reveal'
 

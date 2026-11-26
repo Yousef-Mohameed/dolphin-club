@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { Medal } from 'lucide-react'
+import { LuMedal as Medal } from 'react-icons/lu'
 import { Reveal } from '../lib/reveal'
 import { honors } from '../data/honors'
 

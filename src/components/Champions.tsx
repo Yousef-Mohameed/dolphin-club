@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import { Trophy, Star } from 'lucide-react'
+import { LuTrophy as Trophy, LuStar as Star } from 'react-icons/lu'
 import { Reveal } from '../lib/reveal'
 import { timeline, swimmerOfMonth } from '../data/champions'
 

@@ -1,6 +1,6 @@
 import { Link, useParams } from 'react-router'
 import { useTranslation } from 'react-i18next'
-import { ArrowLeft } from 'lucide-react'
+import { LuArrowLeft as ArrowLeft } from 'react-icons/lu'
 import { posts } from '../data/posts'
 import { useSEO } from '../lib/seo'
 import { useTrial } from '../components/TrialProvider'

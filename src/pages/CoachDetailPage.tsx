@@ -1,6 +1,7 @@
 import { Link, useParams } from 'react-router'
 import { useTranslation } from 'react-i18next'
-import { MessageCircle, ArrowLeft, BadgeCheck } from 'lucide-react'
+import { LuArrowLeft as ArrowLeft, LuBadgeCheck as BadgeCheck } from 'react-icons/lu'
+import { FaWhatsapp as MessageCircle } from 'react-icons/fa'
 import { coaches } from '../data/coaches'
 import { waLink } from '../lib/wa'
 import { useSEO } from '../lib/seo'

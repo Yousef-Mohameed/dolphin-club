@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import { Check } from 'lucide-react'
+import { LuCheck as Check } from 'react-icons/lu'
 import { Reveal } from '../lib/reveal'
 import { useTrial } from '../components/TrialProvider'
 import { useSEO } from '../lib/seo'

@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import { Baby, Trophy, Dumbbell } from 'lucide-react'
+import { LuBaby as Baby, LuTrophy as Trophy, LuDumbbell as Dumbbell } from 'react-icons/lu'
 import { Reveal } from '../lib/reveal'
 import { useTrial } from './TrialProvider'
 
@@ -24,7 +24,9 @@ export default function Programs() {
         {programs.map((p, i) => (
           <Reveal key={p.key} delay={i * 110}>
             <div className="glow-card sweep flex h-full flex-col rounded-3xl border border-line bg-card p-8">
-              <p.icon size={40} className="text-neon" />
+              <div className="icon-blob self-start">
+                <p.icon size={30} className="text-neon" />
+              </div>
               <h3 className="mt-4 font-heading text-2xl font-bold text-neon">
                 {t(`programs.${p.key}.name`)}
               </h3>

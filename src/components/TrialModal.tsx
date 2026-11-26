@@ -3,7 +3,8 @@ import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
 import { useTranslation } from 'react-i18next'
-import { X, CheckCircle2, MessageCircle } from 'lucide-react'
+import { LuX as X, LuCircleCheck as CheckCircle2 } from 'react-icons/lu'
+import { FaWhatsapp as MessageCircle } from 'react-icons/fa'
 import { waLink } from '../lib/wa'
 
 const schema = z.object({

@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next'
-import { MapPin, Phone, Clock, MessageCircle } from 'lucide-react'
+import { LuMapPin as MapPin, LuPhone as Phone, LuClock as Clock } from 'react-icons/lu'
+import { FaWhatsapp as MessageCircle } from 'react-icons/fa'
 import { CLUB } from '../config'
 import { waLink } from '../lib/wa'
 import { Reveal } from '../lib/reveal'

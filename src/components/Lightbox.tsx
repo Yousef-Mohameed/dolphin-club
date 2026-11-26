@@ -1,4 +1,4 @@
-import { X } from 'lucide-react'
+import { LuX as X } from 'react-icons/lu'
 import { useTranslation } from 'react-i18next'
 
 export default function Lightbox({

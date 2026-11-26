@@ -1,6 +1,6 @@
 import { Link } from 'react-router'
 import { useTranslation } from 'react-i18next'
-import { Newspaper } from 'lucide-react'
+import { LuNewspaper as Newspaper } from 'react-icons/lu'
 import { posts } from '../data/posts'
 import { Reveal } from '../lib/reveal'
 import { useSEO } from '../lib/seo'

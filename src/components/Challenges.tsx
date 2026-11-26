@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { Target, Award, Plus } from 'lucide-react'
+import { LuTarget as Target, LuAward as Award, LuPlus as Plus } from 'react-icons/lu'
 import { Reveal } from '../lib/reveal'
 import { loadJSON, saveJSON } from '../lib/storage'
 

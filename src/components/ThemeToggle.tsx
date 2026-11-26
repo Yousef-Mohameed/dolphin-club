@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Moon, Sun } from 'lucide-react'
+import { LuMoon as Moon, LuSun as Sun } from 'react-icons/lu'
 import { useTranslation } from 'react-i18next'
 
 export default function ThemeToggle() {

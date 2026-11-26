@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { Calculator } from 'lucide-react'
+import { LuCalculator as Calculator } from 'react-icons/lu'
 import { Reveal } from '../lib/reveal'
 import { useTrial } from './TrialProvider'
 

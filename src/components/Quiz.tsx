@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { Waves as WavesIcon, RotateCcw } from 'lucide-react'
+import { LuWaves as WavesIcon, LuRotateCcw as RotateCcw } from 'react-icons/lu'
 import { Reveal } from '../lib/reveal'
 import { useTrial } from './TrialProvider'
 

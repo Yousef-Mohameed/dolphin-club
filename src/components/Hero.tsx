@@ -18,10 +18,10 @@ export default function Hero() {
       <div className="mx-auto grid w-full max-w-7xl items-center gap-12 px-6 py-16 lg:grid-cols-2">
         <div className="relative z-10">
           <p className="font-semibold text-neon">{t('hero.badge')}</p>
-          <h1 className="mt-3 font-heading text-5xl font-extrabold leading-tight text-glow md:text-6xl">
+          <h1 className="mt-3 font-heading text-5xl font-black leading-tight text-glow md:text-7xl">
             {t('hero.title1')}
             <br />
-            {t('hero.title2')}
+            <span className="text-gradient">{t('hero.title2')}</span>
           </h1>
           <p className="mt-5 max-w-lg text-lg text-muted">{t('hero.subtitle')}</p>
           <div className="mt-8 flex flex-wrap gap-4">
