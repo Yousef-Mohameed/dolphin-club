@@ -21,12 +21,21 @@
     "dark": "Switch to dark mode"
   },
   "hero": {
-    "badge": "Professional Swimming Club",
-    "title1": "Dive Into the",
-    "title2": "World of Champions",
-    "subtitle": "The first integrated swimming pool in Benha. Professional coaching for all ages - book your free trial session today.",
-    "ctaTrial": "Book a Free Trial",
-    "ctaPrograms": "View Programs"
+    "badge": "Benha's first fully integrated swimming pool",
+    "title1": "We Build the",
+    "title2": "Champions of the Future",
+    "subtitle": "Swimming lessons from zero for every age - babies, kids and adults - with dedicated hours for women and men, coached by Benha University sports-science professors.",
+    "ctaWhatsapp": "Book on WhatsApp",
+    "ctaPrograms": "View Programs",
+    "waMsg": "Hello Dolphin! I would like to book a swimming session.",
+    "trust": [
+      "Open every day",
+      "22K+ followers on Facebook",
+      "Benha University sports-science staff"
+    ],
+    "altKids": "Kids learning to swim at Dolphin Benha",
+    "altSwim": "Freestyle swimmer training at Dolphin Benha",
+    "ctaTrial": "Book a Free Trial"
   },
   "wa": {
     "prefill": "Hello Dolphin! I would like to ask about your swimming programs.",
@@ -290,5 +299,19 @@
     "linksTitle": "Quick links",
     "contactTitle": "Contact",
     "rights": "All rights reserved."
+  },
+  "voices": {
+    "title": "What Our Swimmers' Families Say",
+    "subtitle": "Real comments from our Facebook page",
+    "source": "Facebook comment",
+    "v1": {
+      "text": "The best kids' swimming coach, honestly - and he encourages the adults too."
+    },
+    "v2": {
+      "text": "The purity of the water and the cleanliness of the facilities are the true mirror of this place's success. Thanks to the unsung heroes who work quietly and meticulously."
+    },
+    "v3": {
+      "text": "Beautiful place and very respectful people."
+    }
   }
 }

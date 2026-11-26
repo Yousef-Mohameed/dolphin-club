@@ -402,3 +402,28 @@ h1 {
     inset 0 1px 0 rgba(124, 238, 255, 0.35),
     0 6px 20px rgba(31, 224, 255, 0.35);
 }
+
+/* Hero photo-collage tiles */
+.hero-tile {
+  animation: hero-float 8s ease-in-out infinite;
+  transition: transform 0.45s ease, box-shadow 0.45s ease;
+  will-change: transform;
+}
+.hero-tile-a {
+  transform: rotate(-5deg);
+  animation-delay: -2s;
+}
+.hero-tile-b {
+  transform: rotate(4deg);
+  animation-delay: -5s;
+}
+.hero-tile-a:hover {
+  animation-play-state: paused;
+  transform: rotate(-2deg) scale(1.08);
+  box-shadow: 0 14px 34px rgba(31, 224, 255, 0.4);
+}
+.hero-tile-b:hover {
+  animation-play-state: paused;
+  transform: rotate(1deg) scale(1.08);
+  box-shadow: 0 14px 34px rgba(31, 224, 255, 0.4);
+}
