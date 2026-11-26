@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import Hero from '../components/Hero'
 import Programs from '../components/Programs'
-import RealVoices from '../components/RealVoices'
+// import RealVoices from '../components/RealVoices' // hidden until name approval
 import Quiz from '../components/Quiz'
 import Records from '../components/Records'
 import ScheduleWidget from '../components/ScheduleWidget'
