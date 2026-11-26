@@ -13,14 +13,13 @@ function StaggeredWords({ text, base, gradient = false }: { text: string; base: 
   return (
     <>
       {text.split(' ').map((word, i) => (
-        <span key={i} className="rise-wrap">
-          <span
-            className={`rise ${gradient ? 'text-gradient' : ''}`}
-            style={{ animationDelay: `${base + i * 110}ms` }}
-          >
-            {word}
-          </span>
-          {i < text.split(' ').length - 1 ? ' ' : ''}
+        <span
+          key={i}
+          className={`rise ${gradient ? 'text-gradient' : ''}`}
+          style={{ animationDelay: `${base + i * 110}ms` }}
+        >
+          {word}
+          {i < text.split(' ').length - 1 ? '\u00A0' : ''}
         </span>
       ))}
     </>
