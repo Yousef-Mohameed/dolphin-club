@@ -1,0 +1,13 @@
+{
+  "name": "Dolphin Swimming Club | دولفين",
+  "short_name": "Dolphin",
+  "description": "Professional swimming club: programs, schedule, events and free trial booking.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#041A2E",
+  "theme_color": "#041A2E",
+  "icons": [
+    { "src": "media/pwa-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "media/pwa-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
