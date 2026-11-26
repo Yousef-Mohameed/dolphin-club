@@ -34,19 +34,15 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Media orb: swap /public/media/hero.mp4 (or the poster) to change it */}
-        <div className="relative z-10 mx-auto aspect-square w-full max-w-md">
-          <div className="absolute inset-0 rounded-full bg-neon/20 blur-2xl" />
-          <video
-            className="relative h-full w-full rounded-full border border-neon/40 object-cover shadow-[0_0_60px_rgba(31,224,255,0.35)]"
-            autoPlay
-            muted
-            loop
-            playsInline
-            poster={`${base}media/hero-poster.png`}
-          >
-            <source src={`${base}media/hero.mp4`} type="video/mp4" />
-          </video>
+        {/* Club cover photo from the Dolphin Benha Facebook page */}
+        <div className="relative z-10 mx-auto w-full max-w-lg">
+          <div className="absolute inset-0 rounded-[2rem] bg-neon/20 blur-2xl" />
+          <img
+            src={`${base}media/dolphin-cover.jpg`}
+            alt="Dolphin Swimming Pool Benha"
+            className="hero-photo relative w-full rounded-[2rem] border border-neon/40 object-cover shadow-[0_0_60px_rgba(31,224,255,0.35)]"
+            loading="eager"
+          />
         </div>
       </div>
 

@@ -11,7 +11,7 @@ export const events: ClubEvent[] = [
     id: 'winter-sprint-cup',
     title: { en: 'Winter Sprint Cup', ar: 'كأس الشتاء للسرعات' },
     date: '2026-12-20T09:00:00+02:00',
-    place: { en: 'Aqua Wave main pool', ar: 'مسبح أكوا ويف الرئيسي' },
+    place: { en: 'Dolphin main pool', ar: 'مسبح دولفين الرئيسي' },
     desc: {
       en: '50m and 100m sprints for all age groups. Heats in the morning, finals in the evening.',
       ar: 'سباقات 50 و100 متر لكل الفئات العمرية. تصفيات الصبح ونهائيات بالليل.',

@@ -1,6 +1,5 @@
 import { useTranslation } from 'react-i18next'
 import Hero from '../components/Hero'
-import Stats from '../components/Stats'
 import Programs from '../components/Programs'
 import Quiz from '../components/Quiz'
 import Records from '../components/Records'
@@ -12,9 +11,9 @@ import ReelsGallery, { type Reel } from '../components/ReelsGallery'
 import { useSEO } from '../lib/seo'
 
 const testimonialReels: Reel[] = [
-  { src: 'media/reel1.mp4', title: { en: 'Mariam - from fear to gold', ar: 'مريم - من الخوف للذهب' } },
-  { src: 'media/reel2.mp4', title: { en: 'Omar lost 12kg swimming', ar: 'عمر خس 12 كيلو بالسباحة' } },
-  { src: 'media/reel3.mp4', title: { en: "Yassin's first nationals", ar: 'أول بطولة جمهورية لياسين' } },
+  { src: 'media/reel1.mp4', title: { en: 'Training moments at Dolphin', ar: 'لقطات من التدريب في دولفين' } },
+  { src: 'media/reel2.mp4', title: { en: 'Kids swimming class', ar: 'حصة سباحة للأطفال' } },
+  { src: 'media/reel3.mp4', title: { en: 'Practice session highlights', ar: 'أجمل لحظات التمارين' } },
   { src: 'media/reel4.mp4', title: { en: 'Kids class moments', ar: 'لقطات من حصص الأطفال' } },
 ]
 
@@ -26,7 +25,7 @@ export default function Home() {
     jsonLd: {
       '@context': 'https://schema.org',
       '@type': 'SportsClub',
-      name: 'Aqua Wave Swimming Club',
+      name: 'Dolphin Swimming Club',
       sport: 'Swimming',
     },
   })
@@ -34,7 +33,6 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <Stats />
       <Programs />
       <Quiz />
       <Records />

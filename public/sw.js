@@ -1,4 +1,4 @@
-const CACHE = 'aqua-wave-v1'
+const CACHE = 'dolphin-club-v1'
 const CORE = ['./', './manifest.webmanifest']
 
 self.addEventListener('install', (e) => {

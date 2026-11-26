@@ -7,7 +7,7 @@ import App from './App'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter basename="/aqua-wave">
+    <BrowserRouter basename="/dolphin-club">
       <App />
     </BrowserRouter>
   </StrictMode>,

@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  base: '/aqua-wave/',
+  base: '/dolphin-club/',
   plugins: [react(), tailwindcss()],
 })

@@ -288,3 +288,24 @@ button:focus-visible {
     scroll-behavior: auto;
   }
 }
+
+/* Hero club photo: gentle float + hover zoom/tilt */
+@keyframes hero-float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-14px) rotate(-0.6deg);
+  }
+}
+.hero-photo {
+  animation: hero-float 7s ease-in-out infinite;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  will-change: transform;
+}
+.hero-photo:hover {
+  animation-play-state: paused;
+  transform: scale(1.04) rotate(0.8deg);
+  box-shadow: 0 0 90px rgba(31, 224, 255, 0.55);
+}

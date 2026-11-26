@@ -1,5 +1,5 @@
 {
-  "brand": "Aqua Wave",
+  "brand": "Dolphin",
   "nav": {
     "home": "Home",
     "programs": "Programs",
@@ -20,20 +20,16 @@
     "light": "Switch to light mode",
     "dark": "Switch to dark mode"
   },
-  "sound": {
-    "on": "Play water sounds",
-    "off": "Mute water sounds"
-  },
   "hero": {
     "badge": "Professional Swimming Club",
     "title1": "Dive Into the",
     "title2": "World of Champions",
-    "subtitle": "Professional coaching for all ages, in Olympic pools. Book your free trial session today.",
+    "subtitle": "The first integrated swimming pool in Benha. Professional coaching for all ages - book your free trial session today.",
     "ctaTrial": "Book a Free Trial",
     "ctaPrograms": "View Programs"
   },
   "wa": {
-    "prefill": "Hello Aqua Wave! I would like to ask about your swimming programs.",
+    "prefill": "Hello Dolphin! I would like to ask about your swimming programs.",
     "aria": "Chat with us on WhatsApp"
   },
   "trial": {
@@ -49,7 +45,7 @@
     "successTitle": "You are almost in!",
     "successText": "One tap left: send your booking on WhatsApp and we will confirm your session.",
     "confirmWa": "Confirm on WhatsApp",
-    "waMessage": "Hello Aqua Wave! I want to book a free trial. Name: {{name}}, Phone: {{phone}}, Age: {{age}}, Program: {{program}}",
+    "waMessage": "Hello Dolphin! I want to book a free trial. Name: {{name}}, Phone: {{phone}}, Age: {{age}}, Program: {{program}}",
     "err": {
       "name": "Please enter your name",
       "phone": "Enter a valid phone number",
@@ -109,7 +105,7 @@
     "stopwatch": "50m freestyle - club record",
     "sec": "s",
     "clubLabel": "Set by our competitive team, Nationals 2026",
-    "clubName": "Aqua Wave record",
+    "clubName": "Dolphin record",
     "nationalName": "National average",
     "beginnerName": "Average beginner",
     "note": "Shorter bar = faster time. Our coaches chase every tenth of a second."
@@ -147,7 +143,7 @@
     "book": "Book with this coach",
     "specialties": "Specialties",
     "achievements": "Achievements",
-    "waBook": "Hello Aqua Wave! I would like to book a session with {{name}}."
+    "waBook": "Hello Dolphin! I would like to book a session with {{name}}."
   },
   "gallery": {
     "title": "From the Pool",
@@ -211,7 +207,7 @@
     "phone": "Phone (WhatsApp)",
     "pick": "Choose event",
     "register": "Register via WhatsApp",
-    "waMessage": "Hello Aqua Wave! I want to register for {{event}}. Name: {{name}}, Phone: {{phone}}"
+    "waMessage": "Hello Dolphin! I want to register for {{event}}. Name: {{name}}, Phone: {{phone}}"
   },
   "blog": {
     "title": "The Swim Blog",
@@ -220,8 +216,8 @@
     "ctaText": "Ready to try it in the water?"
   },
   "about": {
-    "title": "About Aqua Wave",
-    "body": "Aqua Wave started in 2018 with one lane and a dream: make championship-level coaching available to every kid in the city. Today we are 12 certified coaches, 35 medalists and more than 1,200 members - and we still treat every new swimmer like our first."
+    "title": "About Dolphin",
+    "body": "Dolphin is the first fully integrated swimming pool in Benha - a place where every swimmer, from first-timer to competitor, gets professional coaching in the water. One pool, one family, and one goal: we build the champion of the future."
   },
   "contact": {
     "title": "Contact Us",
@@ -262,28 +258,28 @@
     }
   },
   "seo": {
-    "homeTitle": "Aqua Wave Swimming Club | Book a Free Trial",
+    "homeTitle": "Dolphin Swimming Club | Book a Free Trial",
     "homeDesc": "Professional swimming coaching for kids and adults. Programs, champions, schedule and free trial booking.",
-    "programsTitle": "Programs | Aqua Wave",
+    "programsTitle": "Programs | Dolphin",
     "programsDesc": "Kids learn-to-swim, competitive team and adults fitness programs.",
-    "coachesTitle": "Coaches | Aqua Wave",
+    "coachesTitle": "Coaches | Dolphin",
     "coachesDesc": "Meet our certified swimming coaches and book with your favorite.",
-    "scheduleTitle": "Schedule | Aqua Wave",
+    "scheduleTitle": "Schedule | Dolphin",
     "scheduleDesc": "Live weekly schedule and available spots.",
-    "membershipTitle": "Membership | Aqua Wave",
+    "membershipTitle": "Membership | Dolphin",
     "membershipDesc": "Monthly, quarterly and yearly membership plans.",
-    "honorsTitle": "Honor Board | Aqua Wave",
+    "honorsTitle": "Honor Board | Dolphin",
     "honorsDesc": "Our medalists and champions by year.",
-    "galleryTitle": "Gallery | Aqua Wave",
+    "galleryTitle": "Gallery | Dolphin",
     "galleryDesc": "Short videos from training, events and member stories.",
-    "eventsTitle": "Events | Aqua Wave",
+    "eventsTitle": "Events | Dolphin",
     "eventsDesc": "Upcoming championships and club events with registration.",
-    "blogTitle": "Blog | Aqua Wave",
+    "blogTitle": "Blog | Dolphin",
     "blogDesc": "Swimming technique, nutrition and injury-prevention articles.",
-    "aboutTitle": "About | Aqua Wave",
-    "aboutDesc": "The story of Aqua Wave swimming club.",
-    "contactTitle": "Contact | Aqua Wave",
-    "contactDesc": "Reach Aqua Wave on WhatsApp, phone or visit us."
+    "aboutTitle": "About | Dolphin",
+    "aboutDesc": "The story of Dolphin swimming club.",
+    "contactTitle": "Contact | Dolphin",
+    "contactDesc": "Reach Dolphin on WhatsApp, phone or visit us."
   },
   "notFound": {
     "text": "This page does not exist.",

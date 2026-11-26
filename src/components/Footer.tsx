@@ -1,6 +1,7 @@
 import { Link } from 'react-router'
 import { useTranslation } from 'react-i18next'
-import { Waves as WavesIcon, Phone, MapPin, Clock } from 'lucide-react'
+import { Phone, MapPin, Clock } from 'lucide-react'
+import DolphinIcon from './DolphinIcon'
 import { CLUB } from '../config'
 
 export default function Footer() {
@@ -12,7 +13,7 @@ export default function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-3">
         <div>
           <div className="flex items-center gap-2 font-heading text-2xl font-bold text-neon text-glow">
-            <WavesIcon size={28} />
+            <DolphinIcon size={30} />
             {t('brand')}
           </div>
           <p className="mt-3 max-w-xs">{t('footer.tagline')}</p>

@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router'
 import { useTranslation } from 'react-i18next'
-import { Menu, X, Waves as WavesIcon } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
+import DolphinIcon from './DolphinIcon'
 import LanguageToggle from './LanguageToggle'
 import ThemeToggle from './ThemeToggle'
-import SoundToggle from './SoundToggle'
 import { useTrial } from './TrialProvider'
 
 const links = [
@@ -41,7 +41,7 @@ export default function Navbar() {
           onClick={close}
           className="flex items-center gap-2 font-heading text-xl font-bold text-neon text-glow"
         >
-          <WavesIcon size={26} />
+          <DolphinIcon size={28} />
           {t('brand')}
         </Link>
 
@@ -56,7 +56,6 @@ export default function Navbar() {
         <div className="hidden items-center gap-3 lg:flex">
           <LanguageToggle />
           <ThemeToggle />
-          <SoundToggle />
           <button
             onClick={() => openTrial()}
             className="btn-neon btn-ripple whitespace-nowrap px-5 py-2 text-sm"
@@ -91,7 +90,6 @@ export default function Navbar() {
           <div className="flex flex-wrap items-center gap-3 pt-2">
             <LanguageToggle />
             <ThemeToggle />
-            <SoundToggle />
             <button
               onClick={() => {
                 close()
