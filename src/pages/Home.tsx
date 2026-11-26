@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import Hero from '../components/Hero'
+import Marquee from '../components/Marquee'
 import Programs from '../components/Programs'
 // import RealVoices from '../components/RealVoices' // hidden until name approval
 import Quiz from '../components/Quiz'
@@ -34,6 +35,7 @@ export default function Home() {
   return (
     <main>
       <Hero />
+      <Marquee />
       <Programs />
       {/* RealVoices hidden until the club confirms using commenters' names */}
       <Quiz />

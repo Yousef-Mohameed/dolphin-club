@@ -14,16 +14,23 @@ export default function Programs() {
   const { openTrial } = useTrial()
 
   return (
-    <section id="programs" className="mx-auto max-w-7xl px-6 py-16">
-      <Reveal>
-        <h2 className="text-center font-heading text-4xl font-bold text-glow">
+    <section id="programs" className="mx-auto max-w-7xl scroll-mt-24 px-6 py-20 md:py-24">
+      <Reveal className="flex flex-col items-center gap-3">
+        <p className="eyebrow">{t('programs.eyebrow')}</p>
+        <h2 className="text-center font-heading text-4xl font-bold text-glow md:text-5xl">
           {t('programs.title')}
         </h2>
       </Reveal>
-      <div className="mt-10 grid gap-6 md:grid-cols-3">
+      <div className="mt-12 grid gap-6 md:grid-cols-3">
         {programs.map((p, i) => (
           <Reveal key={p.key} delay={i * 110}>
-            <div className="glow-card sweep flex h-full flex-col rounded-3xl border border-line bg-card p-8">
+            <div className="glow-card sweep group relative flex h-full flex-col overflow-hidden rounded-3xl border border-line bg-card p-8">
+              <span
+                aria-hidden="true"
+                className="pointer-events-none absolute -top-3 end-5 font-heading text-7xl font-black text-neon/10 transition-colors duration-300 group-hover:text-neon/20"
+              >
+                0{i + 1}
+              </span>
               <div className="icon-blob self-start">
                 <p.icon size={30} className="text-neon" />
               </div>

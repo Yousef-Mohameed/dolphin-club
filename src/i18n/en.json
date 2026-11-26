@@ -35,7 +35,9 @@
     ],
     "altKids": "Kids learning to swim at Dolphin Benha",
     "altSwim": "Freestyle swimmer training at Dolphin Benha",
-    "ctaTrial": "Book a Free Trial"
+    "ctaTrial": "Book a Free Trial",
+    "ring": "DOLPHIN • SWIMMING POOL • BENHA • ",
+    "scroll": "Scroll down"
   },
   "wa": {
     "prefill": "Hello Dolphin! I would like to ask about your swimming programs.",
@@ -82,7 +84,8 @@
     "adults": {
       "name": "Adults Fitness",
       "desc": "Swimming for fitness, technique and weight loss."
-    }
+    },
+    "eyebrow": "Our programs"
   },
   "quiz": {
     "title": "What kind of swimmer are you?",
@@ -313,5 +316,16 @@
     "v3": {
       "text": "Beautiful place and very respectful people."
     }
+  },
+  "marquee": [
+    "Learn to Swim",
+    "Competitive Team",
+    "Adults Fitness",
+    "Women-only Hours",
+    "Babies & Kids",
+    "Benha University Coaches"
+  ],
+  "a11y": {
+    "skip": "Skip to content"
   }
 }

@@ -14,13 +14,15 @@
   --color-text: #eaf7ff;
   --color-muted: #9dc3d8;
 
-  --font-heading: "Poppins", "Cairo", sans-serif;
+  --font-heading: "Space Grotesk", "Poppins", "Cairo", sans-serif;
   --font-body: "Poppins", "Cairo", sans-serif;
+  --font-display: "Space Grotesk", "Cairo", sans-serif;
 }
 
 html[lang="ar"] {
   --font-heading: "Cairo", "Poppins", sans-serif;
   --font-body: "Cairo", "Poppins", sans-serif;
+  --font-display: "Cairo", "Poppins", sans-serif;
 }
 
 [data-theme="light"] {
@@ -71,6 +73,191 @@ body::before {
 body > * {
   position: relative;
   z-index: 1;
+}
+
+/* film-grain texture for depth */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 60;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+::selection {
+  background: var(--color-neon);
+  color: #032336;
+}
+
+/* slim neon scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-deep, #020e1a);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--color-neon), #0b9fd6);
+  border-radius: 9999px;
+  border: 2px solid var(--color-deep, #020e1a);
+}
+
+/* skip link */
+.skip-link {
+  position: fixed;
+  top: -100px;
+  inset-inline-start: 1rem;
+  z-index: 100;
+  background: var(--color-neon);
+  color: #032336;
+  font-weight: 700;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0 0 0.9rem 0.9rem;
+  transition: top 0.25s ease;
+}
+.skip-link:focus-visible {
+  top: 0;
+}
+
+/* section eyebrow label */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-neon);
+}
+.eyebrow::before {
+  content: "";
+  width: 2.2rem;
+  height: 2px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-neon));
+}
+html[dir="rtl"] .eyebrow {
+  letter-spacing: 0;
+}
+
+html[dir="rtl"] .nav-progress {
+  transform-origin: right;
+}
+
+/* pulsing live dot */
+.live-dot {
+  position: relative;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  background: var(--color-neon);
+}
+.live-dot::after {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  border-radius: 9999px;
+  border: 2px solid var(--color-neon);
+  animation: live-ping 1.6s ease-out infinite;
+}
+@keyframes live-ping {
+  0% {
+    transform: scale(0.5);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+/* hero word-by-word entrance */
+.rise {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(110%) rotate(2deg);
+  animation: rise-in 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+.rise-wrap {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+  padding-bottom: 0.08em;
+}
+@keyframes rise-in {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* slow rotating badge */
+.spin-slow {
+  animation: spin-slow 18s linear infinite;
+  transform-origin: center;
+}
+@keyframes spin-slow {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* marquee ribbon */
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+.marquee-track {
+  display: inline-flex;
+  align-items: center;
+  gap: 3rem;
+  padding-inline-end: 3rem;
+  animation: marquee-scroll 26s linear infinite;
+  will-change: transform;
+}
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+html[dir="rtl"] .marquee-track {
+  animation-name: marquee-scroll-rtl;
+}
+@keyframes marquee-scroll-rtl {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(50%);
+  }
+}
+
+/* scroll cue */
+.scroll-cue {
+  animation: cue-bob 1.8s ease-in-out infinite;
+}
+@keyframes cue-bob {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translateY(8px);
+    opacity: 0.45;
+  }
 }
 
 /* Glow helpers */
@@ -262,14 +449,17 @@ button:focus-visible {
 /* Scroll reveal */
 .reveal {
   opacity: 0;
-  transform: translateY(26px);
+  transform: translateY(30px);
+  filter: blur(6px);
   transition:
-    opacity 0.6s ease,
-    transform 0.6s ease;
+    opacity 0.7s ease,
+    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    filter 0.7s ease;
 }
 .reveal.in {
   opacity: 1;
   transform: none;
+  filter: blur(0);
 }
 
 /* Floating orbs */
@@ -325,12 +515,24 @@ button:focus-visible {
 @media (prefers-reduced-motion: reduce) {
   .wave,
   .orb,
-  .pulse-ring {
+  .pulse-ring,
+  .marquee-track,
+  .spin-slow,
+  .scroll-cue,
+  .live-dot::after,
+  .hero-photo,
+  .hero-tile {
+    animation: none;
+  }
+  .rise {
+    opacity: 1;
+    transform: none;
     animation: none;
   }
   .reveal {
     opacity: 1;
     transform: none;
+    filter: none;
     transition: none;
   }
   html {

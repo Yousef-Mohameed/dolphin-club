@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { lazy, Suspense, useEffect } from 'react'
 import { Navigate, Route, Routes, useLocation } from 'react-router'
 import { useTranslation } from 'react-i18next'
 import Navbar from './components/Navbar'
@@ -6,20 +6,21 @@ import Footer from './components/Footer'
 import WhatsAppFloat from './components/WhatsAppFloat'
 import TrialProvider from './components/TrialProvider'
 import Home from './pages/Home'
-import AboutPage from './pages/AboutPage'
-import ProgramsPage from './pages/ProgramsPage'
-import CoachesPage from './pages/CoachesPage'
-import CoachDetailPage from './pages/CoachDetailPage'
-import SchedulePage from './pages/SchedulePage'
-import MembershipPage from './pages/MembershipPage'
-import HonorsPage from './pages/HonorsPage'
-import GalleryPage from './pages/GalleryPage'
-import EventsPage from './pages/EventsPage'
-import BlogPage from './pages/BlogPage'
-import PostPage from './pages/PostPage'
-import ContactPage from './pages/ContactPage'
-import NotFound from './pages/NotFound'
 import { useButtonRipples } from './lib/ripple'
+
+const AboutPage = lazy(() => import('./pages/AboutPage'))
+const ProgramsPage = lazy(() => import('./pages/ProgramsPage'))
+const CoachesPage = lazy(() => import('./pages/CoachesPage'))
+const CoachDetailPage = lazy(() => import('./pages/CoachDetailPage'))
+const SchedulePage = lazy(() => import('./pages/SchedulePage'))
+const MembershipPage = lazy(() => import('./pages/MembershipPage'))
+const HonorsPage = lazy(() => import('./pages/HonorsPage'))
+const GalleryPage = lazy(() => import('./pages/GalleryPage'))
+const EventsPage = lazy(() => import('./pages/EventsPage'))
+const BlogPage = lazy(() => import('./pages/BlogPage'))
+const PostPage = lazy(() => import('./pages/PostPage'))
+const ContactPage = lazy(() => import('./pages/ContactPage'))
+const NotFound = lazy(() => import('./pages/NotFound'))
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -30,7 +31,7 @@ function ScrollToTop() {
 }
 
 export default function App() {
-  const { i18n } = useTranslation()
+  const { i18n, t } = useTranslation()
   useButtonRipples()
 
   useEffect(() => {
@@ -49,9 +50,13 @@ export default function App() {
   return (
     <TrialProvider>
       <div className="flex min-h-screen flex-col bg-bg text-text">
+        <a href="#main-content" className="skip-link">
+          {t('a11y.skip')}
+        </a>
         <ScrollToTop />
         <Navbar />
-        <div className="flex-1">
+        <div className="flex-1" id="main-content">
+          <Suspense fallback={<div className="mx-auto max-w-7xl px-6 py-24" aria-hidden="true" />}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<AboutPage />} />
@@ -72,6 +77,7 @@ export default function App() {
             <Route path="/pricing" element={<Navigate to="/membership" replace />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
+          </Suspense>
         </div>
         <Footer />
         <WhatsAppFloat />

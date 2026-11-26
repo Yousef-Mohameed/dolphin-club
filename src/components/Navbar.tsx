@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link, NavLink } from 'react-router'
 import { useTranslation } from 'react-i18next'
 import { LuMenu as Menu, LuX as X } from 'react-icons/lu'
@@ -30,11 +30,28 @@ const linkClass = ({ isActive }: { isActive: boolean }) =>
 export default function Navbar() {
   const { t } = useTranslation()
   const [open, setOpen] = useState(false)
+  const [progress, setProgress] = useState(0)
   const { openTrial } = useTrial()
   const close = () => setOpen(false)
 
+  useEffect(() => {
+    const onScroll = () => {
+      const max = document.documentElement.scrollHeight - window.innerHeight
+      setProgress(max > 0 ? Math.min(1, window.scrollY / max) : 0)
+    }
+    onScroll()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
   return (
     <header className="sticky top-0 z-50 border-b border-line/40 bg-bg/70 backdrop-blur-md">
+      {/* scroll progress */}
+      <div
+        aria-hidden="true"
+        className="nav-progress absolute inset-x-0 top-0 h-[2.5px] origin-left bg-gradient-to-r from-neon-soft via-neon to-[#0b9fd6]"
+        style={{ transform: `scaleX(${progress})` }}
+      />
       <nav className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-3">
         <Link
           to="/"
@@ -45,7 +62,7 @@ export default function Navbar() {
           {t('brand')}
         </Link>
 
-        <div className="hidden items-center gap-6 lg:flex">
+        <div className="hidden items-center gap-5 xl:flex">
           {links.map((l) => (
             <NavLink key={l.to} to={l.to} end={l.end} className={linkClass}>
               {t(`nav.${l.key}`)}
@@ -53,7 +70,7 @@ export default function Navbar() {
           ))}
         </div>
 
-        <div className="hidden items-center gap-3 lg:flex">
+        <div className="hidden items-center gap-3 xl:flex">
           <LanguageToggle />
           <ThemeToggle />
           <button
@@ -68,14 +85,14 @@ export default function Navbar() {
           onClick={() => setOpen(!open)}
           aria-label={open ? t('nav.close') : t('nav.menu')}
           aria-expanded={open}
-          className="text-text lg:hidden"
+          className="text-text xl:hidden"
         >
           {open ? <X size={28} /> : <Menu size={28} />}
         </button>
       </nav>
 
       {open && (
-        <div className="flex flex-col gap-4 border-t border-line/40 px-5 pb-5 pt-4 lg:hidden">
+        <div className="flex flex-col gap-4 border-t border-line/40 px-5 pb-5 pt-4 xl:hidden">
           {links.map((l) => (
             <NavLink
               key={l.to}
