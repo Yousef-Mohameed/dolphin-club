@@ -35,7 +35,7 @@ export default function Home() {
     <main>
       <Hero />
       <Programs />
-      <RealVoices />
+      {/* RealVoices hidden until the club confirms using commenters' names */}
       <Quiz />
       <Records />
       <ScheduleWidget />

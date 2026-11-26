@@ -2,8 +2,8 @@
 export const CLUB = {
   name: 'Dolphin',
   // WhatsApp number in international format, digits only (no + or spaces).
-  whatsapp: '201105796047',
-  phoneDisplay: '+20 11 05796047',
+  whatsapp: '201118049015',
+  phoneDisplay: '+20 111 804 9015',
   address: { en: 'Off El-Mawqaf St., next to Atrib Youth Center, Benha', ar: 'متفرع من شارع الموقف، بجوار مركز شباب أتريب، بنها' },
   hours: { en: 'Always open', ar: 'مفتوح دائماً' },
 } as const
