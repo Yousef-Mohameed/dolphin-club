@@ -1,0 +1,1 @@
+import{n as e,t}from"./jsx-runtime-BKnD2mPT.js";import{r as n,s as r,t as i}from"./index-BVyG86Yf.js";var a=t();function o(){let{t}=e();return i({title:t(`seo.programsTitle`),description:t(`seo.programsDesc`)}),(0,a.jsxs)(`main`,{className:`pt-6`,children:[(0,a.jsx)(r,{}),(0,a.jsx)(n,{})]})}export{o as default};
